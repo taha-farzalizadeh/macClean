@@ -1,0 +1,33 @@
+// colors
+
+$white : #f8f8fc;
+$brown : #f7b26c;
+$black : #090633;
+$gray : #bcb1b4;
+$red : #F25767;
+$orange : #fc9b37;
+$white-blue : #6292b6;
+$navy-blue : #372750;
+$card-border : #bcb1b466;
+
+$card-white-blue : rgba(98, 146, 182,0.7);
+$card-navy-blue : rgba(55, 39, 80,0.8);
+
+
+// borders
+$radius-lg : 2rem ;
+$radius-md : 1rem;
+$radius-sm : 0.7rem;
+// shadow
+
+
+$shadow-lg:5px 5px 10px rgba(9 ,6 ,51 , 0.15);
+
+
+@mixin cardHeader($border-color) {
+    border : 2px solid $border-color ;
+    border-radius: $radius-sm;
+    width: 2.5rem;
+    height: 2.5rem;
+
+}

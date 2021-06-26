@@ -1,0 +1,90 @@
+.banner{
+    overflow: hidden;
+    height: 10rem;
+    background-color: $orange;
+    border-radius: $radius-lg;
+    justify-content: space-between;
+    box-shadow: $shadow-lg;
+    &.row{
+        margin: 0;
+    }
+    .banner-text{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 2.5rem;
+        color: $white;
+        h2{
+            font-weight: 600;
+        }
+    }
+    .banner-img{
+        position: relative;
+        top: -15px;
+        float: right;
+        right: -3rem;
+        transform: rotate(15deg);
+        width: 200px;
+        height: 200px;
+    }
+}
+.show-date{
+    display: flex;
+    justify-content: space-between;
+    color: $navy-blue;
+    opacity: 0.8;
+    .showDate-text , .this-month{
+        font-weight: 600;
+    }
+}
+.date-card{
+    padding: 0.6rem 0.8rem;
+    p{
+        &:first-child{
+            font-weight: bold;
+            color: $navy-blue;
+            opacity: 0.9;
+        }
+        &:last-child{
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: $gray;
+            margin: 0;
+        }
+    }
+    &.today{
+        background-color: $red;
+        border-radius: $radius-md;
+        box-shadow: 0px 5px 13px 3px rgba(242, 87, 103 , 0.35);
+        p{
+            color: $white;
+        }
+    }
+}
+.reports{
+    margin: 0;
+    .reports-title{
+        color: $navy-blue;
+        opacity: 0.8;
+        h4{
+            font-weight: 600;
+        }
+    }
+    .report-links{
+        margin-top: 0.15rem;
+        .report-link{
+            color: $navy-blue;
+            opacity: 0.8;
+            font-weight: 800;
+            margin: 0 .6rem;
+            text-decoration: none;
+            transition: 0.5s;
+            &.active{
+                color: $navy-blue;
+                opacity: 1;
+            }
+        }
+    }
+}

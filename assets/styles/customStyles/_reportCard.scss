@@ -1,0 +1,42 @@
+.rep-card{
+    border: 2px solid $card-border;
+    border-radius: $radius-md;
+    background-color: transparent;
+}
+.header-border{
+    .card-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.red{
+            @include cardHeader($red);
+            .icons{
+                color: $red;
+            }
+        }
+        &.whiteBlue{
+            @include cardHeader($card-white-blue);
+            .icons{
+                color: $card-white-blue;
+            }
+        }
+        &.orange{
+            @include cardHeader($orange);
+            .icons{
+                color: $orange;
+            }
+        }
+        &.blue{
+            @include cardHeader($card-navy-blue);
+            .icons{
+                color: $card-navy-blue;
+            }
+        }
+    }   
+}
+.card-title{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $navy-blue;
+    opacity: 0.9;
+} 
